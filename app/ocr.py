@@ -9,5 +9,7 @@ img_path = IMG_DIR / "ingredients-1.png"
 
 img = Image.open(img_path)
 preds = pytesseract.image_to_string(img)
-predictions = preds.splitlines()
+predictions = [x for x in preds.split("\n")]
+#predictions = preds.splitlines()
+
 print(predictions)
