@@ -6,3 +6,8 @@ pytest
 requests
 httpx
 pre-commit
+python-dotenv
+python-multipart
+aiofiles
+pillow
+pytesseract
